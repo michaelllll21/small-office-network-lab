@@ -29,6 +29,17 @@ This project simulates a small office network using Cisco Packet Tracer. The net
 - DHCP configuration
 - Ping testing
 
+## Project Status
+Completed.
+
+## Key Features Implemented
+- VLAN segmentation for Admin, IT, and Guest departments
+- Router-on-a-stick inter-VLAN routing
+- DHCP configuration for automatic IP addressing
+- Trunk configuration between router and switch
+- ACL rule to block Guest VLAN access to Admin VLAN
+- Connectivity testing and troubleshooting documentation
+
 ## Topology
 The topology diagram will be added in the `topology` folder.
 
