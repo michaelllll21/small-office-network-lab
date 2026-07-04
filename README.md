@@ -48,6 +48,3 @@ The topology diagram will be added in the `topology` folder.
 - [Configuration Commands](documentation/configuration-commands.md)
 - [Testing Results](documentation/testing-results.md)
 - [Troubleshooting Notes](documentation/troubleshooting-notes.md)
-
-## Project Status
-In progress.
