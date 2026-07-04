@@ -1,14 +1,17 @@
-# Configuration Commands
+## ACL Configuration
 
-This file contains the commands used to configure the small office network lab.
+The ACL below prevents the Guest VLAN from initiating access to the Admin VLAN while still allowing Admin VLAN to receive ICMP echo replies from the Guest VLAN.
 
-## Switch Configuration
+```cisco
+no access-list 100
 
-Commands will be added after VLAN configuration.
+access-list 100 permit icmp 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255 echo-reply
+access-list 100 deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
+access-list 100 permit ip any any
 
-## Router Configuration
-
-Commands will be added after inter-VLAN routing and DHCP configuration.
+interface gigabitEthernet 0/0.30
+ip access-group 100 in
+exit
 
 ## Router Configuration
 
